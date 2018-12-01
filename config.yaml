@@ -1,0 +1,8 @@
+general:
+  maximum retrys: 5
+  console logging level: 40
+  file logging level: 10
+devices:
+- name: "name of USB device"
+  uuid: "UUID of USB device - can be found using diskutil"
+  backup destination: "/path/to/backup/directory"
