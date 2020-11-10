@@ -1,8 +1,7 @@
 # Zenobia
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Python: 3.8](https://img.shields.io/badge/Python-3.8-blue.svg)](https://www.python.org/downloads/release/python-360/)
-[![Release: release number](https://img.shields.io/github/release/errbufferoverfl/zenobia.svg)](https://github.com/errbufferoverfl/zenobia/releases)
+[![Python: 3.8](https://img.shields.io/badge/Python-3.8-blue.svg)](https://www.python.org/downloads/release/python-386/)
 
 > Septimia Zenobia was a third century queen of the Palmyrene Empire in Syria.
 
