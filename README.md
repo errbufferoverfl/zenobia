@@ -1,12 +1,10 @@
 # Zenobia
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Python: 3.6](https://img.shields.io/badge/Python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Python: 3.8](https://img.shields.io/badge/Python-3.8-blue.svg)](https://www.python.org/downloads/release/python-360/)
 [![Release: release number](https://img.shields.io/github/release/errbufferoverfl/zenobia.svg)](https://github.com/errbufferoverfl/zenobia/releases)
 
-Septimia Zenobia was a third century queen of the Palmyrene Empire in Syria.
-
-![Queen Zenobia's Last Look upon Palmyra by Herbert Gustave Schmalz (1888)](https://upload.wikimedia.org/wikipedia/commons/7/75/Herbert_Schmalz-Zenobia.jpg)
+> Septimia Zenobia was a third century queen of the Palmyrene Empire in Syria.
 
 Zenobia is a KeePassXC database backup script that can be run, hourly, daily, monthly or yearly using cron.
 
@@ -19,20 +17,12 @@ Zenobia is a KeePassXC database backup script that can be run, hourly, daily, mo
 Zenobia has a few dependencies, if you are using `pipenv` these can be installed by running:
 
 ```console
-pipenv install --ignore-pipfile
-```
-
-#### Installing via requirements.txt
-
-If you are using normal `pip` dependencies can be installed by running:
-
-```console
-pip install -r requirements.txt
+pipenv install
 ```
 
 ## Configuring Zenobia
 
-In order to run Zenobia a few things should be configured in the `config.yaml` file fount in the root directory.
+In order to run Zenobia a few things should be configured in the `config.yaml` file found in the root directory.
 
 ```yaml
 general:
@@ -48,7 +38,7 @@ devices:
 ### General
 
 You can configure the amount of detail you get in your logs, of course if you are using cron this will require
-you to mess around a little more than usual, but the feature is there. There should be configured using the 
+you to mess around a little more than usual, but the feature is there. This should be configured using the 
 Python logging numeric values. These are provided below for ease of access:
 
 | Level | Numeric Value |
@@ -63,7 +53,7 @@ By default the configuration file comes configured with the console logging leve
 set to `DEBUG`, that way if you experience any issues you should be able to go back and see what happened, and you 
 should only get mail from `cron` in cases where the backup was unsuccessful.
 
-Finally, you can define how many times Zenobia should run should the first backup attempt fail. This is by default set
+Finally, you can define how many times Zenobia should run, should the first backup attempt fail. This is by default set
 to 5.
 
 ### Devices 
@@ -88,7 +78,7 @@ I install the `crontab` using the following configuration:
 # sudo crontab -u yourusername -e
 
 PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Python.framework/Versions/3.6/bin
-0 * * * * cd /absolute/path/to/script/directory && python3.6 zenobia.py
+0 * * * * cd /absolute/path/to/script/directory && python3.8 zenobia.py
 ```
 
 To backup your password database hourly:
@@ -116,7 +106,7 @@ To backup you password database at 10:00:00 PM every day from Monday through to 
 ```
 ## Built With
 
-* [Python 3.6](https://www.python.org/downloads/release/python-366/)
+* [Python 3.8](https://www.python.org/downloads/release/python-386/)
 * [psutil](https://pypi.org/project/psutil/) - A cross-platform lib for process and system monitoring in Python.
 
 ## Contributing
